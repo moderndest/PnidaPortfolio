@@ -15,14 +15,10 @@
 }
 html, body{
     margin: 0;
-    height: 100%;
-    font-family: SukhumvitSet-Light;
+    // height: 100%;
     
 }
 
-body{
-    font-family: SukhumvitSet-Light;
-}
 
 .fontStyle{
     font-family: SukhumvitSet-Light;
@@ -41,7 +37,7 @@ body{
 
 .NavMenu {
     width: 100px;
-    height:auto;
+    // height:auto;
 }
 .link{
     outline:none;
@@ -101,6 +97,7 @@ body{
   }
 
   footer{
+    
     margin-top: 200px;
     height: auto;
     left: 0;
