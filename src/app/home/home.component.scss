@@ -1,0 +1,60 @@
+
+
+.container1{
+    margin-top: 4%;
+    position: relative;
+    width: 100%;
+    padding: 0 0;
+  }
+
+  .container2,.container3, .container4 {
+    position: relative;
+    width: 100%;
+    padding: 0 0;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .middle, .middle2, .middle3, .middle4{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+  }
+  
+//   .container1:hover .image {
+//     opacity: 0.3;
+//     cursor: pointer;
+//   }
+  
+  .container1:hover .middle, .container2:hover .middle2, .container3:hover .middle3, .container4:hover .middle4{
+    opacity: 0.7;
+    cursor:pointer;
+  }
+  
+  .text{
+    color: white;
+    font-size: 400%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer;
+  }
+
+//   .ContactName{
+      
+//   }

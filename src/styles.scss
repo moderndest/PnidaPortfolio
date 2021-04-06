@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+// font 
+@font-face {
+    font-family: SukhumvitSet-Light;
+    src: url(assets/SukhumvitSet-Light.ttf);
+  }
+
+
+* {
+    font-family: SukhumvitSet-Light;
+}
+html, body{
+    margin: 0;
+    height: 100%;
+    font-family: SukhumvitSet-Light;
+    
+}
+
+body{
+    font-family: SukhumvitSet-Light;
+}
+
+.fontStyle{
+    font-family: SukhumvitSet-Light;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.fullextend{
+    width:100%;
+    height:auto;
+    padding: 0 0;
+
+}
+
+// Navigation
+
+.NavMenu {
+    width: 100px;
+    height:auto;
+}
+.link{
+    outline:none;
+    cursor: pointer;
+}
+
+.noPadding{
+    padding:0 0;
+}
+
+.footerlink{
+    width: auto;
+    height: 15%;
+    padding: 10px 10px;
+}
+.center {
+    display: block;
+    margin:0 auto;
+  }
+
+// Header Every Page
+.containerH{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding: 0 0;
+    overflow: hidden;
+  }
+
+  
+  .imageH {
+    display: block;
+  }
+  
+//   .middle, .middle2, .middle3, .middle4{
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     height: 100%;
+//     width: 100%;
+//     opacity: 0;
+//     transition: .5s ease;
+//     background-color: black;
+//   }
+.textMiddle{
+    color: white;
+    font-size: 400%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  footer{
+    margin-top: 200px;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%
+
+  }
