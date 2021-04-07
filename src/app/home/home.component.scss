@@ -7,7 +7,7 @@
     padding: 0 0;
   }
 
-  .container2,.container3, .container4 {
+  .container2,.container3, .container4, .container5 {
     position: relative;
     width: 100%;
     padding: 0 0;
@@ -19,7 +19,7 @@
     height: auto;
   }
   
-  .middle, .middle2, .middle3, .middle4{
+  .middle, .middle2, .middle3, .middle4, .middle5{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -37,7 +37,7 @@
 //     cursor: pointer;
 //   }
   
-  .container1:hover .middle, .container2:hover .middle2, .container3:hover .middle3, .container4:hover .middle4{
+  .container1:hover .middle, .container2:hover .middle2, .container3:hover .middle3, .container4:hover .middle4, .container5:hover .middle5{
     opacity: 0.7;
     cursor:pointer;
   }
