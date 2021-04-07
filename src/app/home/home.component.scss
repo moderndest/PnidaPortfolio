@@ -44,7 +44,7 @@
   
   .text{
     color: white;
-    font-size: 400%;
+    font-size: 80px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,6 +55,22 @@
     cursor: pointer;
   }
 
-//   .ContactName{
-      
-//   }
+  @media screen and (max-width: 1024px){
+    .text{
+      font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 768px){
+  
+    .text{
+      font-size: 25px;
+    }
+    
+  }
+  @media screen and (max-width: 425px){
+    .text{
+      font-size: 20px;
+    }
+    
+  }
+  
