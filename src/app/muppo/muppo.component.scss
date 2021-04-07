@@ -1,0 +1,31 @@
+h1{
+    font-size: 72px;
+}
+p{
+    font-size:38px;
+}
+.intro{
+    position: relative;
+    
+    .itemCenter{
+        margin: 0;
+        // background: yellow;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) ;
+    }
+    span{
+        font-family: SukhumvitSet-Bold;
+    }
+}
+
+// .row {
+//     padding: 0 0;
+// }
+.row > *{
+    padding-left: 0;
+    padding-right: 0;
+}
+

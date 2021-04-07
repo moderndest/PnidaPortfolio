@@ -11,6 +11,7 @@ import { EnvironmentComponent } from './environment/environment.component';
 import { CharacterComponent } from './character/character.component';
 import { AboutComponent } from './about/about.component';
 import { MuppoComponent } from './muppo/muppo.component';
+import { SketchComponent } from './sketch/sketch.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MuppoComponent } from './muppo/muppo.component';
     EnvironmentComponent,
     CharacterComponent,
     AboutComponent,
-    MuppoComponent
+    MuppoComponent,
+    SketchComponent
   ],
   imports: [
     BrowserModule,

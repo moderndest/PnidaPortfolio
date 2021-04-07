@@ -9,6 +9,10 @@
     src: url(assets/SukhumvitSet-Light.ttf);
   }
 
+  @font-face {
+    font-family: SukhumvitSet-Bold;
+    src: url(assets/SukhumvitSet-Bold.ttf);
+  }
 
 * {
     font-family: SukhumvitSet-Light;
@@ -19,10 +23,15 @@ html, body{
     
 }
 
+.row > * {
+
+  padding-right: 0;
+  padding-left: 0;
+}
 
 .fontStyle{
     font-family: SukhumvitSet-Light;
-    font-size: 100px;
+    font-size: 69px;
     text-transform: uppercase;
 }
 
@@ -43,6 +52,10 @@ html, body{
     outline:none;
     cursor: pointer;
 }
+.brand{
+  width: 100px;
+  height: 100%;
+}
 
 .noPadding{
     padding:0 0;
@@ -58,7 +71,7 @@ html, body{
 .containerH{
     position: relative;
     width: 100%;
-    height: 490px;
+    height:auto;
     padding-left: 0px;
     padding-right: 0px;
     overflow: hidden;
@@ -67,6 +80,9 @@ html, body{
   
   .imageH {
     display: block;
+    width: 100%;
+    height: auto;
+    padding: 0 0;
   }
   
   .middleH{
@@ -83,7 +99,7 @@ html, body{
   }
 .textMiddle{
     color: white;
-    font-size: 400%;
+    font-size: 90px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -93,16 +109,114 @@ html, body{
     text-align: center;
   }
 
-  footer{
-    
-    margin-top: 5%;
-    margin-bottom: 5%;
-    height: auto;
-    left: 0;
-    bottom: 0;
-    width: 100%
 
+// FOOTER 
+footer{
+  
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%
+}
+.footerlink{
+  padding: 0 10px;
+}
+
+.footerImg{
+  width: 90px;
+  height: 100%;
+}
+.imgProfile{
+  width: 300px;
+  height: auto;
+}
+
+.footerDetail{
+  h2{
+    font-size: 45px;
   }
-  .footerlink{
-    padding: 0 10px;
+  a{
+    outline: none;
+    text-decoration: none;
+    color: black;
+  }
+  h3{
+    font-size: 40px;
+  }
+  p{
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-width: 1024px){
+  .fontStyle{
+    font-size: 50px;
+  }
+  .imgProfile{
+    width: 250px;
+    height: auto;
+  }
+  .footerDetail{
+    h2{
+      font-size: 35px;
+    }
+    a{
+      outline: none;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+    h3{
+      font-size: 30px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+
+  .footerImg{
+    width: 70px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 768px){
+
+  .brand{
+    width: 70px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 425px){
+  .fontStyle{
+    font-size: 50px;
+  }
+  .imgProfile{
+    width: 200px;
+    height: auto;
+  }
+  .footerDetail{
+    h2{
+      font-size: 25px;
+    }
+    a{
+      outline: none;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+    h3{
+      font-size: 20px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+
+  .footerImg{
+    width: 70px;
+    height: 100%;
+  }
 }

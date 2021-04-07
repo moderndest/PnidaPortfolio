@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 import { CharacterComponent } from './character/character.component';
 import { EnvironmentComponent } from './environment/environment.component';
 import { HomeComponent } from './home/home.component';
 import {IllustrationComponent} from'./illustration/illustration.component';
 import { MuppoComponent } from './muppo/muppo.component';
+import { SketchComponent } from './sketch/sketch.component';
 
 
 const routes: Routes = [
@@ -28,6 +30,14 @@ const routes: Routes = [
   {
     path:"muppo",
     component: MuppoComponent
+  },
+  {
+    path:"sketch",
+    component: SketchComponent
+  },
+  {
+    path:"about",
+    component: AboutComponent
   }
 ];
 
