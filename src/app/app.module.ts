@@ -8,6 +8,9 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { IllustrationComponent } from './illustration/illustration.component';
 import { EnvironmentComponent } from './environment/environment.component';
+import { CharacterComponent } from './character/character.component';
+import { AboutComponent } from './about/about.component';
+import { MuppoComponent } from './muppo/muppo.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { EnvironmentComponent } from './environment/environment.component';
     HomeComponent,
     FooterComponent,
     IllustrationComponent,
-    EnvironmentComponent
+    EnvironmentComponent,
+    CharacterComponent,
+    AboutComponent,
+    MuppoComponent
   ],
   imports: [
     BrowserModule,
