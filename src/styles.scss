@@ -156,6 +156,12 @@ footer{
     font-size: 25px;
   }
 }
+@media screen and (max-width: 1440px){
+
+  .textMiddle{
+    font-size: 60px;
+  }
+}
 
 
 @media screen and (max-width: 1024px){
@@ -190,7 +196,7 @@ footer{
   }
 
   .textMiddle{
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 768px){
@@ -200,7 +206,13 @@ footer{
     height: 100%;
   }
   .textMiddle{
-    font-size: 40px;
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 555px){
+
+  .textMiddle{
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 425px){
