@@ -1,3 +1,93 @@
+
+$orange :#F18949;
+
 .aboutDetail{
-    margin-top: 200px;
+    margin-top: 250px;
 }
+
+
+.about{
+    position: relative;
+    // margin-top: 200px;
+    
+    .aboutCenter{
+        margin: 0;
+        // background: yellow;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) ;
+    }
+    span{
+        font-family: SukhumvitSet-Bold;
+        color: $orange;
+    }
+}
+
+h1{
+    font-size: 62px;
+}
+p, li{
+    font-size:30px;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $orange; /* Change the color */
+    font-size: 40px;
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+  .aboutPadding {
+      margin-top: 200px;
+  }
+
+
+
+  @media screen and (max-width: 1802px){
+    h1{
+        font-size: 52px;
+    }
+    p, li{
+        font-size:28px;
+    }
+  }
+  
+
+  @media screen and (max-width: 1634px){
+    h1{
+        font-size: 42px;
+    }
+    p, li{
+        font-size:24px;
+    }
+  
+    
+  }
+  @media screen and (max-width: 1472px){
+    h1{
+        font-size: 32px;
+    }
+    p, li{
+        font-size:18px;
+    }
+  }
+  @media screen and (max-width: 767px){
+    .about .aboutCenter{
+
+        position: relative;     
+    }
+
+
+        
+    
+  }
+ 
