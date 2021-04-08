@@ -10,7 +10,7 @@ export class EnvironmentComponent implements OnInit {
 
   constructor(public nav:NavbarService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.nav.hide();
   }
 

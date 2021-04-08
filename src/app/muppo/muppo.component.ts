@@ -10,7 +10,7 @@ export class MuppoComponent implements OnInit {
 
   constructor( public nav: NavbarService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.nav.hide();
 
   }

@@ -31,6 +31,10 @@ html, body{
   padding-left: 0;
 }
 
+.row:before, .row::after {
+  display: none !important;
+}
+
 .fontStyle{
     font-family: SukhumvitSet-Light;
     font-size: 69px;
