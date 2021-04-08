@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
+$orange :#F18949;
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 
@@ -45,8 +47,10 @@ html, body{
 // Navigation
 
 .NavMenu {
-    width: 100px;
-    // height:auto;
+    width: 50px;
+    height:50px;
+    float: right;
+    margin: 5px 10px;
 }
 .link{
     outline:none;
@@ -130,7 +134,7 @@ footer{
 
 .footerImg{
   width: 90px;
-  height: 100%;
+  height: auto;
 }
 .imgProfile{
   width: 300px;
@@ -146,7 +150,7 @@ footer{
     text-decoration: none;
     color: black;
     &:hover{
-      color:orange;
+      color:$orange;
     }
   }
   h3{
@@ -163,6 +167,20 @@ footer{
   right: 20px;
   display: none;
 }
+
+//button Style
+.Allbtn{
+  width: auto;
+  height: auto;
+  padding: 10px 20px;
+  background-color: $orange;
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 1440px){
 
