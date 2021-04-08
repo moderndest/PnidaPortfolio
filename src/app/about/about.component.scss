@@ -2,7 +2,7 @@
 $orange :#F18949;
 
 .aboutDetail{
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 
@@ -84,6 +84,15 @@ ul li::before {
     .about .aboutCenter{
 
         position: relative;     
+    }
+
+    @media screen and (max-width: 425px) {
+
+        .aboutDetail{
+            margin-top: 140px;
+        }
+        
+        
     }
 
 
