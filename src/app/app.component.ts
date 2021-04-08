@@ -13,7 +13,7 @@ export class AppComponent {
   
   constructor(public router:Router,  public nav: NavbarService){}
   ngOnInit(){
-    this.nav.show();
+    
     window.onbeforeunload = () => {
       window.scrollTo(0,0);
     }
@@ -22,7 +22,9 @@ export class AppComponent {
       window.scrollTo(0,0);
     })
   }
-
+  ngAfterViewInit(){
+    this.nav.show();
+  }
   homeNavClick(){
     this.nav.show();
   }

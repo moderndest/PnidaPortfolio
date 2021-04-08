@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavbarService } from '../navbar.service';
 
 @Component({
   selector: 'app-illustration',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IllustrationComponent implements OnInit {
 
-  constructor() { }
+  constructor(public nav:NavbarService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.nav.hide();
   }
 
 }

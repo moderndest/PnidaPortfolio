@@ -6,12 +6,12 @@ import { Injectable } from '@angular/core';
 export class NavbarService {
 
   visible: boolean;
-  navBg ={"background-color": "white"};
+  navBg ={};
   
 
   constructor() { 
     this.visible = false;
-    this.navBg = {"background-color": "white"};
+    this.navBg = {"background-color":"transparent" };
   }
 
   hide() { 
