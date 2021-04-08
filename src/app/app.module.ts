@@ -12,6 +12,7 @@ import { CharacterComponent } from './character/character.component';
 import { AboutComponent } from './about/about.component';
 import { MuppoComponent } from './muppo/muppo.component';
 import { SketchComponent } from './sketch/sketch.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SketchComponent } from './sketch/sketch.component';
     CharacterComponent,
     AboutComponent,
     MuppoComponent,
-    SketchComponent
+    SketchComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,
