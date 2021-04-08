@@ -8,12 +8,12 @@ $orange :#F18949;
 // font 
 @font-face {
     font-family: SukhumvitSet-Light;
-    src: url(assets/SukhumvitSet-Light.ttf);
+    src: url(assets/SukhumvitSet-Light.ttf)  format('truetype');
   }
 
   @font-face {
     font-family: SukhumvitSet-Bold;
-    src: url(assets/SukhumvitSet-Bold.ttf);
+    src: url(assets/SukhumvitSet-Bold.ttf)  format('truetype');
   }
 
 * {
@@ -59,6 +59,10 @@ html, body{
 .link{
     outline:none;
     cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
 }
 .brand{
   width: 100px;
@@ -273,7 +277,7 @@ footer{
   }
 
   .footerImg{
-    width: 70px;
+    width: 50px;
     height: 100%;
   }
 
@@ -283,14 +287,18 @@ footer{
 }
 
 @media screen and (max-width: 375px){
+  footer{
+    margin-bottom: 20px;
+  }
   .brand{
     width: 50px;
     height: 100%;
   }
   .footerImg{
-    width: 40px;
+    width: 35px;
     height: 100%;
   }
+ 
   .imgProfile{
     width: 140px;
   }
