@@ -2,7 +2,13 @@
 $orange :#F18949;
 
 .aboutDetail{
-    margin-top: 200px;
+    margin-top: 180px;
+    p{
+        font-size:30px;
+    }
+    h1{
+        font-size: 62px;
+    }
 }
 
 
@@ -25,12 +31,6 @@ $orange :#F18949;
     }
 }
 
-h1{
-    font-size: 62px;
-}
-p, li{
-    font-size:30px;
-}
 
 ul {
     list-style: none; /* Remove default bullets */
@@ -48,6 +48,18 @@ ul li::before {
 
 .aboutPadding {
     margin-top: 200px;
+    h1{
+        font-size: 45px;
+    }
+    p, li{
+        font-size:30px;
+    }
+
+    a{
+        text-decoration: underline;
+        color:$orange;
+        font-size: 35px;
+    }
 }
 
 hr{
@@ -61,44 +73,108 @@ hr{
 }
 
 .softwareIcon{
-    width: 30px;
+    width: 60px;
     height: auto;
+    margin-right: 40px;
+}
+
+.footerPadding{
+    margin-top: 200px;
 }
 
 
 
 @media screen and (max-width: 1802px){
-h1{
-    font-size: 52px;
-}
-p, li{
-    font-size:28px;
-}
+    .aboutDetail{
+        h1{
+            font-size: 52px;
+        }
+    }
 }
 
 
 @media screen and (max-width: 1634px){
-h1{
-    font-size: 42px;
-}
-p, li{
-    font-size:24px;
-}
+    .aboutDetail{
+        h1{
+            font-size: 42px;
+        }
+        p{
+            font-size:20px;
+        }
+        
+    }
 
 
 }
 @media screen and (max-width: 1472px){
-h1{
-    font-size: 32px;
+        
+    .aboutDetail{
+        p{
+            font-size:20px;
+        }
+        h1{
+            font-size: 35px;
+        }
+    }
+    .aboutPadding{
+        h1{
+            font-size: 35px;
+        }
+        p, li{
+            font-size:20px;
+        }
+        a{
+            font-size: 25px;
+        }
+    }
+
 }
-p, li{
-    font-size:18px;
-}
+
+@media screen and (max-width: 948px){
+        
+    .aboutDetail{
+        p{
+            font-size:16px;
+        }
+        h1{
+            font-size: 30px;
+        }
+    }
+    .aboutPadding{
+        h1{
+            font-size: 30px;
+        }
+        p, li{
+            font-size:18px;
+        }
+        a{
+            font-size: 23px;
+        }
+    }
+
 }
 @media screen and (max-width: 767px){
-.about .aboutCenter{
+    .about .aboutCenter{
 
-    position: relative;     
+        position: relative;     
+    }
+
+    // .aboutDetail{
+    //     p{
+    //         font-size:16px;
+    //     }
+    //     h1{
+    //         font-size: 30px;
+    //     }
+    // }
+    // .aboutPadding{
+    //     h1{
+    //         font-size: 30px;
+    //     }
+    //     p, li{
+    //         font-size:16px;
+    //     }
+    // }
 }
 
 @media screen and (max-width: 425px) {
@@ -106,11 +182,22 @@ p, li{
     .aboutDetail{
         margin-top: 140px;
     }
+    ul{
+        margin-left: 5px;
+    }
+    
+    ul li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: $orange; /* Change the color */
+        font-size: 30px;
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 0.8em; /* Also needed for space (tweak if needed) */
+        margin-left: -0.8em; /* Also needed for space (tweak if needed) */
+    }
     
     
 }
 
 
-    
 
-}

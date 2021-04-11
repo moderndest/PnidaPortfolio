@@ -14,4 +14,10 @@ export class AboutComponent implements OnInit {
     this.nav.hide();
   }
 
+  routerClick(){
+    this.nav.hide();
+  }
+
+  
+
 }
