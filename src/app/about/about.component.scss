@@ -44,59 +44,73 @@ ul li::before {
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
+}
 
-  .aboutPadding {
-      margin-top: 200px;
-  }
+.aboutPadding {
+    margin-top: 200px;
+}
+
+hr{
+    width:80%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: black;
+    opacity: 0.7;
+    border: none;
+
+}
+
+.softwareIcon{
+    width: 30px;
+    height: auto;
+}
 
 
 
-  @media screen and (max-width: 1802px){
-    h1{
-        font-size: 52px;
+@media screen and (max-width: 1802px){
+h1{
+    font-size: 52px;
+}
+p, li{
+    font-size:28px;
+}
+}
+
+
+@media screen and (max-width: 1634px){
+h1{
+    font-size: 42px;
+}
+p, li{
+    font-size:24px;
+}
+
+
+}
+@media screen and (max-width: 1472px){
+h1{
+    font-size: 32px;
+}
+p, li{
+    font-size:18px;
+}
+}
+@media screen and (max-width: 767px){
+.about .aboutCenter{
+
+    position: relative;     
+}
+
+@media screen and (max-width: 425px) {
+
+    .aboutDetail{
+        margin-top: 140px;
     }
-    p, li{
-        font-size:28px;
-    }
-  }
-  
-
-  @media screen and (max-width: 1634px){
-    h1{
-        font-size: 42px;
-    }
-    p, li{
-        font-size:24px;
-    }
-  
     
-  }
-  @media screen and (max-width: 1472px){
-    h1{
-        font-size: 32px;
-    }
-    p, li{
-        font-size:18px;
-    }
-  }
-  @media screen and (max-width: 767px){
-    .about .aboutCenter{
-
-        position: relative;     
-    }
-
-    @media screen and (max-width: 425px) {
-
-        .aboutDetail{
-            margin-top: 140px;
-        }
-        
-        
-    }
-
-
-        
     
-  }
- 
+}
+
+
+    
+
+}
