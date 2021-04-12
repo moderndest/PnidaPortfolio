@@ -23,6 +23,7 @@
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@ng-bootstrap/ng-bootstrap": "^9.1.0",
     "bootstrap": "^5.0.0-beta3",
+    "firebase": "^8.3.3",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "rxjs": "~6.6.0",

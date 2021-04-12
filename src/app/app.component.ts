@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {NavigationEnd, Router} from "@angular/router";
-import { NavbarService } from './navbar.service';
+import { NavbarService } from './services/navbar.service';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,8 @@ import { NavbarService } from './navbar.service';
 })
 export class AppComponent {
   title = 'Pnida Portfolio';
+
+  // public devWidth = window.width();
   
   
   constructor(public router:Router,  public nav: NavbarService){}

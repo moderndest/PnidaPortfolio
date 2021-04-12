@@ -13,6 +13,8 @@ import { AboutComponent } from './about/about.component';
 import { MuppoComponent } from './muppo/muppo.component';
 import { SketchComponent } from './sketch/sketch.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { NavbarService } from './services/navbar.service';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,15 @@ import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
     AboutComponent,
     MuppoComponent,
     SketchComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [NavbarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

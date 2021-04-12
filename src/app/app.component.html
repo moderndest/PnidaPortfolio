@@ -1,4 +1,5 @@
 
+
 <nav class="navbar fixed-top navbar-light" [ngStyle] ="nav.navBg">
   <!--  style="background-color: white;" -->
   <div class="container-fluid">
@@ -21,6 +22,11 @@
         <!-- menubar here -->
         <div class="col-12">
           <img class="NavMenu" src="assets/menu.svg">
+          <!-- <app-side-nav 
+            [sidenavTemplateRef]="navContent"
+
+            [navWidth]="280" 
+            [duration]="0.5"></app-side-nav> -->
         </div>
         
       </div>
@@ -32,10 +38,14 @@
     </div>
 
    
-    
+    <!--             [direction]="'left'"  -->
   </div>
 </nav>
 
 <router-outlet></router-outlet>
 
 <app-scroll-to-top></app-scroll-to-top>
+
+<ng-template #navContent>
+  Side Nav Bar Content Here
+</ng-template>
