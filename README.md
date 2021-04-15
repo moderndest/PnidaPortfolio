@@ -1,6 +1,5 @@
 # Pranida Portfolio 
-
-this project is used :
+Language in this project :
 - HTML5
 - typescript
 - Angular 11
