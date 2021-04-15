@@ -1,4 +1,4 @@
-<div class="row noPadding">
+<div class="row">
     <div class="containerH">
         
         <img class="imageH" src ="assets/character/characterH.svg">
@@ -9,53 +9,83 @@
     
 </div>
 
-<!-- picture1 -->
-<div class="row mt-5">
-    <div class="col-7 mx-auto">
-        <img class="image" src="assets/character/thaiDance_cdc.svg">
+<!-- show all art works -->
+<div class="row" *ngFor="let image of imageData;let i = index">
+    <div class="col-10 col-md-6 col-lg-5 mx-auto mt-5" *ngIf="image.onclick">
+        <div *ngFor="let each of image.src">
+            <img class="image my-5" src ="{{each}}">
+        </div>
+        
     </div>
-    <div class="col-4 mx-auto">
-        <img class= "image" src ="assets/character/S__3424259.svg">
+  
+</div>  
+
+
+<!--  Select Art Menu -->
+<div class="row mt-5" *ngIf="!hidepic">
+    <!-- picture1 -->
+    <div class="col-4">
+        <img class="image link" (click)="onClicked(0)" src="assets/character/girlcover.svg"/>
+          
+    </div>
+    <!-- picture2 -->
+    <div class="col-4">
+        <img class="image link" (click)="onClicked(1)" src="assets/character/cover2.svg"/>
+
+    </div>
+    <!-- picture3 -->
+    <div class="col-4">
+        <img class="image link" (click)="onClicked(2)"src="assets/character/linkcover.svg"/>
+          
     </div>
 
-   
-</div>
-<!-- picture2 -->
-<div class="row mt-5">
-    <div class="col-11 mx-auto">
-        <img class="image" src="assets/character/Meh_001.svg">
+    <!-- picture 4 -->
+    <div class="col-4">
+        <img class="image link" (click)="onClicked(3)"src="assets/character/catninjacover.svg"/>
+          
+
     </div>
-    
-    
-</div>
-<!-- picture3 -->
-<div class="row mt-5">
-    <div class="col-5 mx-auto"><img class="image" src="assets/character/panida-ratarasan-asset-3.svg"></div>
-    <div class="col-5 mx-auto"><img class="image" src="assets/character/panida-ratarasan-asset-2.svg"></div>
-    
-</div>
-<!-- picture4 -->
-<div class="row mt-5">
-    <div class="col-8 mx-auto">
-        <img class="image"  src="assets/character/Ninja_cat.svg">
+    <!-- picture5 -->
+    <div class="col-4">
+        <img class="image link" (click)="onClicked(4)" src="assets/character/foodwariorcover.svg"/>
+          
+
     </div>
-   
-      
-    
-</div>
-<!-- picture5 -->
-<div class="row mt-5">
-    <div class="col-11 mx-auto">
-        <img class="image"  src="assets/character/robot.svg">
+    <!-- picture6 -->
+    <div class="col-4 ">
+        <img class="image link" (click)="onClicked(5)"src="assets/character/catsoildercover.svg"/>
     </div>
-    
+
+    <!-- picture7 -->
+    <div class="col-4 ">
+        <img class="image link" (click)="onClicked(6)" src="assets/character/manbutcover.svg"/>
+    </div>
+    <!-- picture8 -->
+    <div class="col-4 ">
+        <img class="image link" (click)="onClicked(7)"src="assets/character/witchcover.svg"/>
+    </div>
+    <!-- picture9 -->
+    <div class="col-4 ">
+        <img class="image link" (click)="onClicked(8)"src="assets/character/cover9.svg"/>
+    </div>
+    <!-- picture10 -->
+    <div class="col-4 ">
+        <img class="image link" (click)="onClicked(9)" src="assets/character/cover10.svg"/>
+    </div>
+    <!-- picture11 -->
+    <div class="col-4 ">
+        <img class="image link" (click)="onClicked(10)"src="assets/character/cover11.svg"/>
+    </div>
+    <!-- picture12 -->
+    <div class="col-4 ">
+        <img class="image link" (click)="onClicked(11)"src="assets/character/cover12.svg"/>
+    </div>
 </div>
 
-<div class="row mt-5">
-    <div class="col-11 mx-auto">
-        <img class="image"  src="assets/character/warrior.svg">
-    </div>
-    
+
+<!-- Back -->
+<div class="col-10 col-md-6 mx-auto text-center  mt-5" *ngIf="hidepic">
+    <a class="backBtn " (click)="goBack()">Back</a>
 </div>
 
 <!-- footer -->

@@ -15,6 +15,13 @@ import { SketchComponent } from './sketch/sketch.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { NavbarService } from './services/navbar.service';
+import { ShowillustrationComponent } from './showillustration/showillustration.component';
+import { ClientComponent } from './client/client.component';
+import { ResumeComponent } from './resume/resume.component';
+import { TinymightyComponent } from './tinymighty/tinymighty.component';
+import { BountybrawlComponent } from './bountybrawl/bountybrawl.component';
+import { ClientdashComponent } from './clientdash/clientdash.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,12 +35,20 @@ import { NavbarService } from './services/navbar.service';
     MuppoComponent,
     SketchComponent,
     ScrollToTopComponent,
-    SideNavComponent
+    SideNavComponent,
+    ShowillustrationComponent,
+    ClientComponent,
+    ResumeComponent,
+    TinymightyComponent,
+    BountybrawlComponent,
+    ClientdashComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [NavbarService],
   bootstrap: [AppComponent]

@@ -1,0 +1,64 @@
+$orange :#F18949;
+
+
+.row > *{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+// .containerC1 * {
+//     box-sizing: border-box;
+// }
+
+.link:hover { filter: brightness(50%); }
+
+.containerC1 .containerC2 {
+    position: relative;
+    width: 100%;
+    padding: 0 0;
+    // display: inline-block;
+	// overflow: hidden;
+	// max-width: 100%;
+	height: auto;
+  }
+  
+ 
+  
+  .middleC1, .middleC2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+  }
+  
+//   .container1:hover .image {
+//     opacity: 0.3;
+//     cursor: pointer;
+//   }
+  
+  .containerC1:hover .middleC1, .containerC2:hover .middleC2{
+    opacity: 0.7;
+    cursor:pointer;
+  }
+  
+  .hovertext{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    // cursor: pointer;
+  }
+
+//   .link:hover { filter: brightness(50%); }

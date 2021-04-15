@@ -31,9 +31,9 @@ html, body{
   padding-left: 0;
 }
 
-.row:before, .row::after {
-  display: none !important;
-}
+// .row:before, .row::after {
+//   display: none !important;
+// }
 
 .fontStyle{
     font-family: SukhumvitSet-Light;
@@ -55,6 +55,9 @@ html, body{
     height:50px;
     float: right;
     margin: 5px 10px;
+    &:hover{
+      cursor: pointer;
+    }
 }
 .link{
     outline:none;
@@ -82,7 +85,9 @@ html, body{
   .image {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    padding: 0 0;
+    border: none;
   }
 
 
@@ -196,11 +201,80 @@ footer{
   cursor: pointer;
 }
 
+.backBtn{
+  margin-top: 100px;
+  text-decoration: underline;
+  color:$orange;
+  font-size: 35px;
+  cursor: pointer;
+}
+.mainnav{
+  position: fixed;
+  // will-change: transform;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  width: 100%;
+  
+  // background: 0 0;
+}
+// SIDE BAR
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  border-radius: 50px 0px 0px 50px; 
+  background-color:$orange;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 999;
+}
+
+.sidenav a {
+  padding: 8px 8px 20px 102px;
+  text-decoration: none;
+  font-size: 35px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #2b2b2b;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+// @media screen and (max-height: 450px) {
+//   .sidenav {padding-top: 15px;}
+//   .sidenav a {font-size: 18px;}
+// }
+  
 
 @media screen and (max-width: 1440px){
 
   .textMiddle{
     font-size: 60px;
+  }
+   
+  .sidenav a {
+    padding: 8px 8px 10px 50px;
+    font-size: 30px;
+  }
+  .backBtn{
+    font-size: 30px;
+
   }
 }
 
@@ -240,15 +314,34 @@ footer{
   .textMiddle{
     font-size: 50px;
   }
+
+  .sidenav a {
+    padding: 8px 8px 10px 30px;
+    font-size: 20px;
+  }
+  .backBtn{
+    font-size: 25px;
+
+  }
 }
 @media screen and (max-width: 768px){
-
+  .fontStyle{
+    font-size: 30px;
+  }
   .brand{
     width: 50px;
     height: 100%;
   }
   .textMiddle{
     font-size: 35px;
+  }
+  .NavMenu {
+    width: 30px;
+    height:30px; 
+  }
+  .backBtn{
+    font-size: 20px;
+
   }
 }
 
@@ -260,7 +353,7 @@ footer{
 }
 @media screen and (max-width: 425px){
   .fontStyle{
-    font-size: 50px;
+    font-size: 20px;
   }
   .imgProfile{
     width: 200px;
@@ -292,6 +385,18 @@ footer{
   .textMiddle{
     font-size: 25px;
   }
+  // .sidenav {padding-top: 15px;}
+  .sidenav a {
+    padding: 8px 8px 10px 20px;
+    font-size: 18px;
+  }
+  .sidenav .closebtn {
+    // position: absolute;
+    // top: 0;
+    right: 15px;
+    // font-size: 36px;
+    // margin-left: 50px;
+  }
 }
 
 @media screen and (max-width: 375px){
@@ -302,6 +407,11 @@ footer{
     width: 40px;
     height: 100%;
   }
+  .NavMenu {
+    width: 20px;
+    height:20px;
+    
+}
   .footerImg{
     width: 35px;
     height: 100%;
@@ -312,6 +422,10 @@ footer{
   }
   .textMiddle{
     font-size: 20px;
+  }
+  .sidenav a {
+    padding: 8px 8px 10px 20px;
+    font-size: 14px;
   }
 }
 

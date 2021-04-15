@@ -1,0 +1,28 @@
+.resume{
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+// .pdf{
+//     background-color: #FFFFFF" width="1000" height="400" frameborder="0" 
+//     webkitallowfullscreen mozallowfullscreen allowfullscreen
+// }
+
+@media screen and (max-width: 768px){
+    .resume{
+        margin-top: 110px;
+    }
+  }
+
+  @media screen and (max-width: 425px){
+    .resume{
+        margin-top: 100px;
+    }
+
+  }

@@ -1,0 +1,69 @@
+<div *ngIf="password;then auth else unauth" class="">
+ <!-- tmeplate will replace here -->
+</div>
+<ng-template #auth>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</ng-template>
+<ng-template #unauth>
+
+<div class="row fullbg">
+    <!-- #pswform="ngForm" -->
+    <!--  [formGroup]="accessForm"  -->
+    
+ 
+    <form class="col-10 col-sm-10 col-lg-6 col-xl-3 loginform " [formGroup]="accessForm"  autocomplete="off"  #loginform="ngForm" (ngSubmit)="access()">
+        <div class="form-group row">
+            <label id="psw" >
+                <!-- [(ngModel)]="Jobdes.link"
+                #passlink="ngModel"  -->
+                <input
+                   
+                    formControlName="password"
+                    required
+                    name="pwdinput1"
+                    id ="pwdinput1"
+                    class="form-control"
+                    type="password"
+                    placeholder="Password"  
+                     
+                />
+                <!-- line -->
+                <svg class="line" viewbox="0 0 40 2" preserveAspectRatio="none">
+                    <path d="M0 1 L900 1"></path>
+                    <path class="focus" d="M0 1 L900 1"></path>
+                    <path class="wrong" d="M0 1 L900 1" *ngIf="formErrors.password || (!accessForm.valid && loginform.submitted)"></path>
+                    <path class="correct" d="M0 1 L900 1"></path>
+                </svg>
+        
+                <!-- alert -->
+                <!-- <div class="alertcolor col-12 mt-1"  *ngIf="(!userForm.valid)">
+                        {{ formErrors.password }}
+                </div> -->
+                <div class="alertcolor col-12 mt-1" *ngIf="!accessForm.dirty && !accessForm.valid && loginform.submitted ">
+                    Password is required.
+                </div>
+                <div class="alertcolor col-12 mt-1" *ngIf="wrongpass && accessForm.dirty  && loginform.submitted"> Enter Wrong Password</div>
+        
+            </label>
+        </div>
+        <!-- <div class="form-group" id="form_pass">
+            <label for="exampleInputPassword1" class="text-center">Enter Password to View Page</label>
+            <input type="password" class="form-control col-4" id="exampleInputPassword1" placeholder="Password">
+        </div> -->
+        <div class="d-flex justify-content-center mt-5">
+            <button type="submit" class="btn btn-primary">ENTER</button>
+        </div>
+        
+        
+    </form>
+
+</div>
+
+</ng-template>
+
+
+
+
+
+

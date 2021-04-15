@@ -1,9 +1,23 @@
+<!-- Sidenav -->
+<div id="mySidenav" #mySidenav class="sidenav ">
+  <!-- <div class="bg"></div> -->
+  <a href="javascript:void(0)" class="closebtn" (click)="closeIconNav()">&times;</a>
+  <a routerLink="/" routerLinkActive="active"(click) ="homeNavClick()">HOME</a>
+  <a routerLink="/illustration" routerLinkActive="active" (click)="closeNav()">ILLUSTRATION</a>
+  <a routerLink="/character" routerLinkActive="active" (click)="closeNav()">CHARACTER</a>
+  <a routerLink="/environment" routerLinkActive="active" (click)="closeNav()">ENVIRONMENTAL DESIGN</a>
+  <a routerLink="/muppo" routerLinkActive="active"(click)="closeNav()">MUPPO THE LITTLE WITCH</a>
+  <a routerLink="/study" routerLinkActive="active"(click)="closeNav()">STUDY</a>
+  <a routerLink="/client" routerLinkActive="active"(click)="closeNav()">CLIENT WORK</a>
+  <a routerLink="/resume" routerLinkActive="active"(click)="closeNav()">RESUME</a>
+  <a routerLink="/about" routerLinkActive="active"(click)="closeNav()">ABOUT</a>
 
 
-<nav class="navbar fixed-top navbar-light" [ngStyle] ="nav.navBg">
+</div>
+<nav class="mainnav navbar position-fixed " [ngStyle] ="nav.navBg" >
   <!--  style="background-color: white;" -->
   <div class="container-fluid">
-    <div class="navbar-brand link" routerLink="/" routerLinkActive="active" (click) ="homeNavClick()">
+    <div class="navbar-brand link " routerLink="/" routerLinkActive="active" (click) ="homeNavClick()">
       <svg class="brand"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 144 174">
         <defs>
           <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 586 706">
@@ -21,18 +35,15 @@
       <div class= "row">
         <!-- menubar here -->
         <div class="col-12">
-          <img class="NavMenu" src="assets/menu.svg">
-          <!-- <app-side-nav 
-            [sidenavTemplateRef]="navContent"
 
-            [navWidth]="280" 
-            [duration]="0.5"></app-side-nav> -->
+          <a (click)="navOnClick()"><img class="NavMenu" src="assets/menu.svg"></a>
+
         </div>
         
       </div>
       <div class= "row"  *ngIf="nav.visible">
         <!-- this one hide when click other page -->
-        <p class="fontStyle">Pnida’s portfolio</p>
+        <p class="fontStyle">Pranida’s portfolio</p>
       </div>
 
     </div>
@@ -42,10 +53,9 @@
   </div>
 </nav>
 
+
+
 <router-outlet></router-outlet>
 
 <app-scroll-to-top></app-scroll-to-top>
 
-<ng-template #navContent>
-  Side Nav Bar Content Here
-</ng-template>
