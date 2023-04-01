@@ -1,0 +1,68 @@
+.row > *{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.link:hover { filter: brightness(50%); }
+
+.textH{
+  font-size: 70px;
+}
+
+.textdes{
+  color: #A6A6A6;
+  font-size: 35px;
+}
+
+
+@media screen and (max-width: 1440px){
+
+  .textH{
+      font-size: 65px;
+  }
+  .textdes{
+    color: #A6A6A6;
+    font-size: 30px;
+  }
+ 
+}
+
+
+@media screen and (max-width: 1024px){
+
+  .textH{
+      font-size: 60px;
+  }
+  .textdes{
+    color: #A6A6A6;
+    font-size: 25px;
+  }
+ 
+}
+
+@media screen and (max-width: 768px){
+
+  .textH{
+      font-size: 55px;
+  }
+  .textdes{
+    color: #A6A6A6;
+    font-size: 20px;
+  }
+ 
+}
+
+@media screen and (max-width: 425px){
+
+  .textH{
+      font-size: 30px;
+  }
+
+  .textdes{
+    color: #A6A6A6;
+    font-size: 16px;
+  }
+ 
+}
+  

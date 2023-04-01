@@ -10,11 +10,11 @@ export class IllustrationComponent implements OnInit {
 
   hidepic:boolean = false;
   imageData= [
-    { src:['assets/illustration/lofi_challenge.jpg'], onclick: false},
-    { src:['assets/illustration/catplace.svg'], onclick: false},
-    { src:['assets/illustration/Seraphine_002.jpg'], onclick: false},
-    { src:['assets/illustration/kiki.svg'], onclick: false},
-    { src:['assets/illustration/neighbor.svg'], onclick: false},
+    { src:['assets/illustration/lofi_challenge.webp'], onclick: false},
+    { src:['assets/illustration/catplace.webp'], onclick: false},
+    { src:['assets/illustration/Seraphine_002.webp'], onclick: false},
+    { src:['assets/illustration/kiki.webp'], onclick: false},
+    { src:['assets/illustration/neighbor.webp'], onclick: false},
 
 
   ]

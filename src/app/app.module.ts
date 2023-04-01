@@ -22,6 +22,12 @@ import { TinymightyComponent } from './tinymighty/tinymighty.component';
 import { BountybrawlComponent } from './bountybrawl/bountybrawl.component';
 import { ClientdashComponent } from './clientdash/clientdash.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EnvAdventureComponent } from './env-adventure/env-adventure.component';
+import { EnvdashComponent } from './envdash/envdash.component';
+import { WhalecomingComponent } from './whalecoming/whalecoming.component';
+import { TothemoonComponent } from './tothemoon/tothemoon.component';
+import { AfternoonteaComponent } from './afternoontea/afternoontea.component';
+import { TheadventureoforgeComponent } from './theadventureoforge/theadventureoforge.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +47,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ResumeComponent,
     TinymightyComponent,
     BountybrawlComponent,
-    ClientdashComponent
+    ClientdashComponent,
+    EnvAdventureComponent,
+    EnvdashComponent,
+    WhalecomingComponent,
+    TothemoonComponent,
+    AfternoonteaComponent,
+    TheadventureoforgeComponent
   ],
   imports: [
     BrowserModule,

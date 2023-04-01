@@ -1,0 +1,109 @@
+
+.row > * {
+
+    padding-right: 0;
+    padding-left: 0;
+  }
+.paddingL{
+  padding-left: 1%;
+}
+
+.paddingR{
+  padding-right: 1%;
+}
+
+
+.imageC {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: none;
+}
+.textH{
+    font-size: 70px;
+    font-weight: 900;
+  text-transform: uppercase;
+  }
+.textdes{
+  // color: #A6A6A6;
+  font-size: 30px;
+  text-align: justify;
+}
+.subtitleH{
+  font-size: 30px;
+}
+.textdesH{
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.subH {
+  font-size: 90px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1440px){
+  
+    .textH{
+        font-size: 65px;
+    }
+    .textdes{
+      color: #A6A6A6;
+      font-size: 30px;
+    }
+   
+  }
+  
+  
+  @media screen and (max-width: 1024px){
+  
+    .textH{
+        font-size: 55px;
+    }
+    
+    .subtitleH{
+      font-size: 25px;
+    }
+
+    .textdes{
+      color: #A6A6A6;
+      font-size: 18px;
+    }
+   
+  }
+  
+  @media screen and (max-width: 768px){
+  
+    .textH{
+        font-size: 48px;
+    }
+    .subtitleH{
+      font-size: 20px;
+    }
+    .textdes{
+      color: #A6A6A6;
+      font-size: 16px;
+    }
+   
+  }
+  
+  @media screen and (max-width: 425px){
+  
+    .textH{
+        font-size: 30px;
+    }
+
+    .subtitleH{
+      font-size: 18px;
+    }
+  
+    .textdes{
+      color: #A6A6A6;
+      font-size: 14px;
+    }
+   
+  }
+    

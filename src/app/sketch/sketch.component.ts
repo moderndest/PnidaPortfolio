@@ -12,7 +12,7 @@ export class SketchComponent implements OnInit {
    imageData= [
     { src:['assets/sketch/sketch09.svg', 'assets/sketch/sketch08.svg', 'assets/sketch/sketch07.svg','assets/sketch/sketch06.svg', 'assets/sketch/sketch05.svg'], onclick: false},
     { src:['assets/sketch/sketch01.svg', 'assets/sketch/sketch02.svg', 'assets/sketch/sketch03.svg','assets/sketch/sketch04.svg'], onclick: false},
-    { src:['assets/sketch/sketch10.svg','assets/sketch/sketch11.svg'], onclick: false}
+    { src:['assets/sketch/sketch10.svg','assets/sketch/sketch11.svg','assets/sketch/sketch12.svg','assets/sketch/sketch13.svg' ], onclick: false}
   ]
 
   constructor(public nav:NavbarService) { }

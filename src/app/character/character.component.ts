@@ -10,18 +10,18 @@ export class CharacterComponent implements OnInit {
 
   hidepic:boolean = false;
    imageData= [
-    { src:['assets/character/thaiDance_cdc.jpg', 'assets/character/Thaidancesketch.svg'], onclick: false},
-    { src:['assets/character/Meh_001.jpg','assets/character/CDCweb.svg'], onclick: false},
-    { src:['assets/character/link.svg','assets/character/zelda.svg'], onclick: false},
+    { src:['assets/character/thaiDance_cdc.jpg', 'assets/character/Thaidancesketch.webp'], onclick: false},
+    { src:['assets/character/Meh_001.jpg','assets/character/CDCweb.webp'], onclick: false},
+    { src:['assets/character/link.webp','assets/character/zelda.webp'], onclick: false},
     { src:['assets/character/Ninja_cat.jpg'], onclick: false},
-    { src:['assets/character/bettlefood.svg'], onclick: false},
-    { src:['assets/character/copperB.svg', 'assets/character/copB_expression.svg', 'assets/character/cop-B pose.svg'], onclick: false},
-    { src:['assets/character/shinabu.svg'], onclick: false},
+    { src:['assets/character/bettlefood.webp'], onclick: false},
+    { src:['assets/character/copperB.webp', 'assets/character/copB_expression.webp', 'assets/character/cop-B pose.webp'], onclick: false},
+    { src:['assets/character/shinabu.webp'], onclick: false},
     { src:['assets/character/RE_001.jpg'], onclick: false},
-    { src:['assets/character/haku.svg'], onclick: false},
+    { src:['assets/character/haku.webp'], onclick: false},
     { src:['assets/character/Yokai_CDC_pulish copy.jpg'], onclick: false},
     { src:['assets/character/Racingbot.jpg'], onclick: false},
-    { src:['assets/character/joker.svg'], onclick: false}
+    { src:['assets/character/joker.webp'], onclick: false}
   ]
 
   constructor(public nav:NavbarService) { }

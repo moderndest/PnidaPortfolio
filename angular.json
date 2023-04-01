@@ -135,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "maplePort"
+  "defaultProject": "maplePort",
+  "cli": {
+    "analytics": false
+  }
 }

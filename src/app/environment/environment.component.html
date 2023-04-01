@@ -1,7 +1,7 @@
 <!-- Header Page -->
 <div class="row noPadding">
     <div class="containerH">
-        <img class="imageH" src="assets/env/envH.svg">
+        <img class="imageH" src="assets/env/envH.webp">
         <!-- <img class="=col-12 fullextend image" src ="assets\lofi_challenge.jpg">  -->
         <div class="middleH">
         </div>
@@ -11,33 +11,7 @@
     
 </div>
 
-<!-- show all art works -->
-<div class="row" *ngFor="let image of imageData;let i = index">
-    <div class="col-10 col-md-6 col-lg-4 mx-auto mt-5" *ngIf="image.onclick">
-        <div *ngFor="let each of image.src">
-            <img class="image my-5" src ="{{each}}">
-        </div>
-        
-    </div>
-  
-</div>  
-
-<!--  Select Art Menu -->
-<div class="row mt-5" *ngIf="!hidepic">
-    <!-- picture1 -->
-    <div class="col-4">
-        <img class="image link" (click)="onClicked(0)" src="assets/env/cover1.svg"/>
-          
-    </div>
-</div>
-
-<!-- Back -->
-<div class="col-10 col-md-6 mx-auto text-center  mt-5" *ngIf="hidepic">
-    <a class="backBtn " (click)="goBack()">Back</a>
-</div>
-
-
-
+<router-outlet></router-outlet>
 
 <!-- footer -->
 <app-footer></app-footer>
