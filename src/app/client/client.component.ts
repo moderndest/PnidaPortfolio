@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 type Field ="password"
 type FormErrors ={[u in Field]:string}
 
@@ -13,7 +13,7 @@ export class ClientComponent implements OnInit {
 
   public password =false;
   public wrongpass = false;
-  accessForm!: FormGroup;
+  accessForm!: UntypedFormGroup;
 
   formErrors: FormErrors = {
     password: ""
@@ -26,7 +26,7 @@ export class ClientComponent implements OnInit {
   
  
  
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: UntypedFormBuilder) { }
 
   ngOnInit(): void {
     this.buildForm();
